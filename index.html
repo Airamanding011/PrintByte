@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRINTBYTE | IT202 </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+ <link rel="icon" href="printbyte-icon.png">
+    <link rel="stylesheet" href="style.css">
+
+      
+</head>
+    <body>
+        <header>
+            <nav class="navbar section-content">
+               <a href="#" class="nav-logo">
+                <img src="printbyte-icon.jpg" alt="PRINTBYTE Logo" class="logo-img">
+                <h2 class="logo-text">PRINTBYTE | IT202</h2>
+            </a>
+               <ul class="nav-menu">
+                    <button id="menu-open-button" class="fas fa-bars"></button>
+                <ul class="nav-menu">
+                    <button id="menu-close-button" class="fas fa-times"></button>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reviews" class="nav-link">REVIEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#author" class="nav-link">AUTHOR'S</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#receipt" class="nav-link">RECEIPT</a>
+                    </li>
+                    
+                </ul>
+
+                <button id="menu-open-button" class="fas fa-bars"></button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero-section">
+                <div class="section-content">
+                    <div class="hero-details">
+                        <h3 class="subtitle">PrintByte: Precision Printing, Powered by Innovation.</h3>
+                    <p class="description">Looking for reliable and high-quality printing? PrintByte is the perfect choice. Known for its sharp output, quick turnaround, and customer-friendly service, it’s a trusted name for all your printing needs.”</p>
+                    
+                    <div class="buttons">
+                       <a href="#menu" class="button print-now">Print Now</a>
+                       <a href="#contact" class="button contact-us">Contact Us</a>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+          <section class="about-section" id="about">
+    <div class="section-content">
+        <div class="about-image-wrapper">
+            <img src="About-Us.png" alt="About" class="about-image">
+        </div>
+        <div class="about-details">
+            <h2 class="section-title">About Us</h2>
+            <p class="text">Welcome to PrintByte — your reliable partner for fast, affordable, and high-quality printing solutions.
+            At PrintByte, we understand the needs of students, small businesses, and individuals who want professional results without spending too much. Whether it’s documents, projects, customized prints, or creative designs, we are here to turn your ideas into reality.
+            We combine modern technology with creativity to deliver clear, vibrant, and precise prints every time. With a focus on convenience, quality, and customer satisfaction, PrintByte makes printing easier and more accessible for everyone.
+            Print smart. Print easy. Print with PrintByte.</p>
+
+            <div class="social-link-list">
+                <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                      <a href="#" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+            
+        </section>
+
+        <section class="menu-section" id="menu">
+            <h2 class="section-title"> Our Service's Menu: </h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="Brochure.jpg" alt="brochure" class="menu-image">
+                        <h3 class="name"> BROCHURE SERVICES </h3>
+                        <h4 class="name">=================================</h4>
+                            <p class="text"> create high-quality brochures that effectively showcase you products,
+                            services, or information. With clean layouts and vibrant prints, your message is presented
+                            in a professional and engaging way.
+                        </p>
+                        <div class="price-list">
+                        <p><span>Short Size (B&W)</span> <span>₱10 / page</span></p>
+                        <p><span>Long Size (B&W)</span> <span>₱15 page</span></p>
+                    </div>
+                            <a href="#contact" class="buy-btn" onclick="setService('Brochure Service')">Buy This</a>
+                    </li>
+                    <li class="menu-item">
+                        <img src="flyers.jpg" alt="Flyers" class="menu-image">
+                        <h3 class="name"> FLYERS SERVICES</h3>
+                        <h4 class="divider">=================================</h4>
+                        <p class="text">Our flyer printing services are perfect for promotions,
+                            announcements, and marketing campaigns. We produce visually appealing and high-quality
+                            flyers that help you reach your target audience effectively.
+                        </p>
+                            <div class="price-list">
+                            <p><span>Black & White</span> <span> ₱8 / piece</span></p>
+                            <p><span>Colored </span> <span> ₱10 / piece</span></p>
+                            <a href="#contact" class="buy-btn" onclick="setService('Flyers Service')">Buy This</a>
+
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="id picture.png" alt="ID Picture" class="menu-image">
+                        <h3 class="name"> ID-PICTURE SERVICES</h3>
+                        <h4 class="divider">=================================</h4>
+                        <p class="text">PrintByte delivers Professional ID Picture services with proper sizing
+                            and clear quality, suitable for School ID's, Job Applications, and Official documents. 
+                            Quick and hassle-free processing guaranteed.
+                        </p>
+                        <div class="price-list">
+                        <p>1x1 - ₱50</p>
+                        <p>2x2 - ₱70</p>
+                        <p>Rush - +₱20</p>
+                        <a href="#contact" class="buy-btn" onclick="setService('Id Picture Service')">Buy This</a>
+
+                    </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="tarpaulin.jpg" alt="Tarpaulin" class="menu-image">
+                        <h3 class="name"> TARPAULIN PRINTING</h3>
+                        <h4 class="divider">=================================</h4>
+                        <p class="text">We provide high-quality tarpaulin printing with vibrant colors and durable materials, 
+                            perfect for Events, Advertisements, and Special occasions. Our prints are designed to be eye-catching
+                            and long-lasting, ensuring your message stands out. 
+                        </p>
+                        <div class="price-list">
+                        <p>Per sq.ft - ₱35</p>
+                        <p>Layout Design - ₱100+</p>
+                        <p><span>Short Size</span> <span>₱10</span></p>
+                        <a href="#contact" class="buy-btn" onclick="setService('Tarpaulin Service')">Buy This</a>
+
+                    </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="xerox.jpg" alt="Xerox" class="menu-image">
+                        <h3 class="name"> XEROX SERVICES</h3>
+                        <h4 class="divider">=================================</h4>
+                        <p class="text">Our Xerox and Document Printing services offer Fast, Clear, and affordable copies
+                            for School, Office, and Personal Use. We ensure sharp and readable outputs, even for Bulk Printing needs.
+                        </p>
+
+                        <!-- ✅ PRICE LIST -->
+                        <div class="price-list">
+                            <p><span>Black & White</span> <span> ₱5 / piece</span></p>
+                            <p><span>Colored Copy</span> <span> ₱7 / piece</span></p>
+                            <a href="#contact" class="buy-btn" onclick="setService('Xerox Service')">Buy This</a>
+
+                        </div>
+                    </li>
+                       <li class="menu-item">
+                        <img src="others.jpg" alt="Other" class="menu-image">
+                        <h3 class="name"> OTHER'S SERVICES</h3>
+                        <h4 class="name">=================================</h4>
+                        <p class="text">Magtanong nalang kayo kung ano pa ang mga kailangan ninyo. 
+                            Thankies and Pagpalain nawa kaayo! </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact-section" id="payment"></section>
+            <div class="qr-container">
+                <h3>Scan Me for Payment</h3>
+                <img src="qr.png.jpeg" alt="QR Code" class="qr-image">
+                <p>Scan this for Fast and Secure Payment</p>
+            </div>
+        </section>
+
+    <section class="reviews-section" id="reviews">
+    <h2 class="section-title">REVIEW'S SECTION</h2>
+    <div class="section-content">
+        <div class="swiper slider-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide review">
+                    <img src="Andrea.jpg" alt="User" class="user-image">
+                    <h3 class="name">💬: Andrea M. ⭐⭐⭐⭐⭐</h3>
+                    <i class="feedback">"The printing quality is excellent and very clear. 
+                        The service was fast and the staff were very accommodating."</i>
+                </div>
+
+                <div class="swiper-slide review">
+                    <img src="Joshua.jpg" alt="User" class="user-image">
+                    <h3 class="name">💬:Joshua C. ⭐⭐⭐⭐</h3>
+                    <i class="feedback">"I had my school documents printed here and everything was done perfectly. 
+                        Fast service and great quality."</i>
+                </div>
+
+                <div class="swiper-slide review">
+                    <img src="jenny.jpg" alt="User" class="user-image">
+                    <h3 class="name">💬:Jenny M. ⭐⭐⭐⭐⭐</h3>
+                    <i class="feedback">“Very satisfied with the ID picture service.
+                         The output was sharp and professionally edited.”</i>
+                </div>
+
+                <div class="swiper-slide review">
+                    <img src="kelly.jpg" alt="User" class="user-image">
+                    <h3 class="name">💬:Kelly P. ⭐⭐⭐⭐⭐</h3>
+                    <i class="feedback">“Affordable prices but high-quality results. 
+                        Perfect for students and small businesses.”</i>
+                </div>
+
+                <div class="swiper-slide review">
+                    <img src="Miguel.webp" alt="User" class="user-image">
+                    <h3 class="name">💬:Miguel D.A ⭐⭐⭐⭐⭐</h3>
+                    <i class="feedback">“The process was smooth and easy. 
+                        Customer service was very friendly and responsive.”</i>
+                </div>
+
+            </div>
+
+            <!-- NAVIGATION -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Our Work Gallery! </h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="01.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                     <li class="gallery-item">
+                        <img src="02.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                     <li class="gallery-item">
+                        <img src="03.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                     <li class="gallery-item">
+                        <img src="04.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                     <li class="gallery-item">
+                        <img src="05.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                     <li class="gallery-item">
+                        <img src="06.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                     <li class="gallery-item">
+                        <img src="07.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                     <li class="gallery-item">
+                        <img src="08.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                     <li class="gallery-item">
+                        <img src="09.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                     <li class="gallery-item">
+                        <img src="10.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                     <li class="gallery-item">
+                        <img src="11.jpg" alt="Gallery" class="gallery-image">
+                     </li>
+
+                     <li class="gallery-item">
+                        <img src="12.jpg" alt="Gallery" class="gallery-image">
+                     </li>
+
+                </ul>
+            </div>
+        </section>
+
+      <section class="contact-section" id="contact">
+    <h2 class="section-title">Contact Our Team</h2>
+    <div class="section-content">
+        <ul class="contact-info-list">
+
+            <li class="contact-info">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <p>7CH8+99R, Pedro Guevara Ave, Santa Cruz, 4009 Laguna</p>
+            </li>
+
+            <li class="contact-info">
+                <i class="fa-regular fa-envelope"></i>
+                <p>printbyte0123@website.com</p>
+            </li>
+
+            <li class="contact-info">
+                <i class="fa-solid fa-phone"></i>
+                <p>0912-345-6789</p>
+            </li>
+
+            <li class="contact-info">
+                <i class="fa-regular fa-clock"></i>
+                <p>Monday To Friday: 7:30 AM - 7:30 PM</p>
+            </li>
+
+            <li class="contact-info">
+                <i class="fa-regular fa-clock"></i>
+                <p>Saturday To Sunday: 9:00 AM - 5:00 PM</p>
+            </li>
+
+            <li class="contact-info">
+                <i class="fa-solid fa-user"></i>
+                <p>Studyante ng STI STA.CRUZ mula sa IT202</p>
+            </li>
+
+        </ul>
+
+       <form action="#" class="contact-form" id="contactForm">
+
+<input type="text"
+id="customerNameInput"
+placeholder="Your Name:"
+class="form-input"
+required>
+
+<input type="email"
+id="customerEmail"
+placeholder="Your Email:"
+class="form-input"
+required>
+
+<textarea
+id="customerMessage"
+placeholder="Your Message"
+class="form-input"
+required></textarea>
+
+<input
+type="number"
+id="qty"
+placeholder="Quantity"
+class="form-input"
+required>
+
+<button type="submit" class="submit-button">Submit Order</button>
+
+</form>
+    </div>
+</section>
+
+
+        <section class="authors-section" id="author">
+    <h2 class="section-title">Meet the Team</h2>
+    <div class="section-content">
+        <ul class="authors-list">
+            <li class="author-card">
+                <img src="airam.png" alt="Author" class="author-image">
+                <h3 class="name">Ruth Airam Sindayen Anding</h3>
+                <p class="role">"Full-Stack Developer & UI Designer"</p>
+                <p class="desc">Led the overall development and design of the website, overseeing everything from layout architecture to user interface implementation, and delivering a fully functional, visually appealing, and user-friendly platform.</p>
+            </li>
+
+            <li class="author-card">
+                <img src="juvelle.jpg" alt="Author" class="author-image">
+                <h3 class="name">Juvelle Villanueva</h3>
+                <p class="role">"Creative Director / Graphic Designer"</p>
+                <p class="desc">Responsible for conceptualizing design ideas and creating visual assets such as logos.</p>
+            </li>
+
+            <li class="author-card">
+                <img src="janzen.png" alt="Author" class="author-image">
+                <h3 class="name">Janzen Ibanez</h3>
+                <p class="role">"Image Editor / Production Assistant"</p>
+                <p class="desc">Handles image editing and assists in preparing visual content efficiently.</p>
+            </li>
+
+            <li class="author-card">
+                <img src="kate.jpg" alt="Author" class="author-image">
+                <h3 class="name">Kate Lorence Sadicon</h3>
+                <p class="role">"Assistant Web Developer / Support Developer"</p>
+                <p class="desc">Provided support in coding and assisted in website development tasks.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="receipt-section" id="receipt">
+    <h2 class="section-title">Receipt</h2>
+    <div class="section-content">
+        <div class="receipt-container">
+            <div class="receipt">
+                <h2>PRINTBYTE</h2>
+                <p>Online Printing Services</p>
+                <hr>
+                <p><strong>Encoder:</strong> <span id="encoderName">Juan Dela Cruz</span></p>
+                <p><strong>Customer:</strong> <span id="customerName">Maria</span></p>
+                <p><strong>Date:</strong> <span id="dateNow"></span></p>
+                <hr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                            <th>Sub</th>
+                        </tr>
+                    </thead>
+                    <tbody id="receiptItems">
+                        <tr><td colspan="4" style="color:#999;">No orders yet</td></tr>
+                    </tbody>
+                </table>
+                <hr>
+                <h3>Total: ₱<span id="total">0</span></h3>
+                <p class="thankyou">
+                    Thank you for choosing PRINTBYTE<br>
+                    <small>Website: printbyte.com</small>
+                </p>
+                <button onclick="printReceipt()" class="print-btn" style="width:100%; margin-top:10px;">
+                    🖨️ Print Receipt
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text"> @PRINTBYTE STUDENT IT202 STI STACRUZ 2026</p>
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                      <a href="#" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy Policy</a>
+                    <span class="separator">⚫</span>
+                    <a href="#" class="policy-link">Refund Policy</a>
+                </p>
+            </div>
+
+
+        </footer>
+
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    </body>
+    <script src="script.js"></script>
+    </html>
